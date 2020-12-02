@@ -8,10 +8,8 @@ const Section = ({ heading, children }) => {
 }
 
 const Wrapper = styled.section`
-    max-width: 1000px;
-    margin: 2.25rem auto;
+    margin: 2.25rem 0;
     padding: 1rem;
-    min-height: 500px;
     border: solid 3px black;
     @media (max-width: 1000px){
         margin: 2.25rem;

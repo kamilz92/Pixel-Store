@@ -15,4 +15,8 @@ export const GlobalStyle = createGlobalStyle`
         padding: 0;
         font-family: 'Press Start 2P', cursive;
     }
+    a {
+        text-decoration: none;
+        color: #000;
+    }
 `;

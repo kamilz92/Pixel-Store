@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 export const Header = styled.header`
     border-bottom: 3px solid rgba(0,0,0,.4);
@@ -31,6 +31,14 @@ export const IconWrapper = styled.div`
 export const Icon = styled.img`
     cursor: pointer;
 `;
+const show = keyframes`
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+`;
 export const ItemNumber = styled.span`
     position: absolute;
     width: 20px;
@@ -41,4 +49,6 @@ export const ItemNumber = styled.span`
     top: 0;
     right: 10px;
     pointer-events: none;
+    // animation
+    animation: ${show} .32s ease-in forwards;
 `;
